@@ -98,7 +98,7 @@ public class PhonesRepositoryImple implements PhonesRepository {
         }
         return found;
     }
-
+    // naxodit obshiy sumu git
     @Override
     public int findTotalPricePhone() {
         int total = 0;
