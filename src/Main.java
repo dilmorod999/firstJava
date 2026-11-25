@@ -30,8 +30,10 @@ public class Main {
 //        System.out.println(findPhoneTotalId0);
 //        phonesRepositoryImple.findPhoneBuINFile();
 //        phonesRepositoryImple.findPhoneAvgMaxMin();
-        Phones findPhonesMax = phonesRepositoryImple.findPhoneModel();
-        System.out.println(findPhonesMax);
+//        Phones findPhonesMax = phonesRepositoryImple.findPhoneModel();
+//        System.out.println(findPhonesMax);
+        int findTotal = phonesRepositoryImple.findTotalPricePhone();
+        System.out.println(findTotal);
 
     }
 }

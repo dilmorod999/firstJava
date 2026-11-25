@@ -98,4 +98,13 @@ public class PhonesRepositoryImple implements PhonesRepository {
         }
         return found;
     }
+
+    @Override
+    public int findTotalPricePhone() {
+        int total = 0;
+        for (int i = 0; i < phones.size(); i++) {
+            total = total + phones.get(i).getPrice();
+        }
+        return total;
+    }
 }

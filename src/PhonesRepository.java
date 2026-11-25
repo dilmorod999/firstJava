@@ -12,4 +12,6 @@ public interface PhonesRepository {
     void findPhoneAvgMaxMin() throws IOException;
 //    Создать метод который будет искать показания телефона в самом длинным показании модели и возвращать его название
     Phones findPhoneModel();
+    int findTotalPricePhone();
+
 }
