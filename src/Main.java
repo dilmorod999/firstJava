@@ -32,8 +32,24 @@ public class Main {
 //        phonesRepositoryImple.findPhoneAvgMaxMin();
 //        Phones findPhonesMax = phonesRepositoryImple.findPhoneModel();
 //        System.out.println(findPhonesMax);
-        int findTotal = phonesRepositoryImple.findTotalPricePhone();
-        System.out.println(findTotal);
+//        int findTotal = phonesRepositoryImple.findTotalPricePhone();
+//        System.out.println(findTotal);
+        Employee employee = new Employee(1, "Dimitriy", 2000,"menager");
+        Employee employee1 = new Employee(2, "Sasha", 1000,"Boss");
+        Employee employee2 = new Employee(3, "Mixail", 3000,"Admin");
+        Employee employee3 = new Employee(4, "Nikita", 4000,"Emp");
+        ArrayList<Employee> employeeArrayList = new ArrayList<>();
+        employeeArrayList.add(employee);
+        employeeArrayList.add(employee1);
+        employeeArrayList.add(employee2);
+        employeeArrayList.add(employee3);
+        EmployeeRepositoryImple employeeRepositoryImple = new EmployeeRepositoryImple(employeeArrayList);
+//        List<Employee> findFirstPartA = employeeRepositoryImple.findCountEmployeAfirstPart();
+//        System.out.println(findFirstPartA);
+//        int findThreeZeroINsalary = employeeRepositoryImple.findTotalSalaryHaveThree0();
+//        System.out.println(findThreeZeroINsalary);
+//        employeeRepositoryImple.findTotalSalaryFileAvgBalance();
+        employeeRepositoryImple.findEmpFileMenagerSalary(2);
 
     }
 }
